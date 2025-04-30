@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 5px;
+}
+
+#weather-info {
+    margin-top: 20px;
+}

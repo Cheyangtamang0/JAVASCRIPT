@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather Forecast</title>
+    <link rel="stylesheet" href="fore.css">
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+    <label for="lat">Latitude:</label>
+    <input type="text" id="lat" placeholder="Enter latitude">
+    <label for="lon">Longitude:</label>
+    <input type="text" id="lon" placeholder="Enter longitude">
+    <button onclick="getWeatherByCoordinates()">Get Weather</button>
+    <br>
+    <label for="locations">Select a location:</label>
+    <select id="locations" onchange="getWeatherByDropdown()">
+        <option value="" disabled selected>Select location</option>
+        <option value="28.6139,77.2090">GANGTOK</option>
+        <option value="19.0760,72.8777">GEYZING</option>
+        <option value="51.5074,-0.1278">PELLING</option>
+        <option value="35.6895,139.6917">NAMCHI</option>
+    </select>
+    <div id="weather-info"></div>
+    <script src="goat.js"></script>
+</body>
+</html>
